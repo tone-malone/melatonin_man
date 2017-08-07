@@ -1,0 +1,142 @@
+hlcsg v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlcsg -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlcsg.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\start" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\start" -low -wadautodetect 
+Entering C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\start.map
+
+Current hlcsg Settings
+Name                 |  Setting  |  Default
+---------------------|-----------|-------------------------
+threads               [       4 ] [  Varies ]
+verbose               [     off ] [     off ]
+log                   [      on ] [      on ]
+reset logfile         [      on ] [      on ]
+developer             [       0 ] [       0 ]
+chart                 [     off ] [     off ]
+estimate              [     off ] [     off ]
+max texture memory    [ 33554432 ] [ 33554432 ]
+max lighting memory   [ 33554432 ] [ 33554432 ]
+priority              [     Low ] [  Normal ]
+
+noclip                [     off ] [     off ]
+null texture stripping[      on ] [      on ]
+clipnode economy mode [     off ] [     off ]
+clip hull type        [  simple ] [  simple ]
+onlyents              [     off ] [     off ]
+wadtextures           [      on ] [      on ]
+skyclip               [      on ] [      on ]
+hullfile              [    None ] [    None ]
+wadcfg by file        [    None ] [    None ]
+wadcfg by name        [    None ] [    None ]
+nullfile              [    None ] [    None ]
+nullify trigger       [      on ] [      on ]
+min surface area      [   0.000 ] [   0.000 ]
+brush union threshold [   0.000 ] [   0.000 ]
+map scaling           [    None ] [    None ]
+light name optimize   [      on ] [      on ]
+UTF8 game_text        [      on ] [      on ]
+
+Using mapfile wad configuration
+Wadfiles not in use by the map will be excluded
+Wadinclude list :
+[zhlt.wad]
+
+CreateBrush:
+ (0.00 seconds)
+CSGBrush:
+ (0.00 seconds)
+
+Using Wadfile: \users\tom\desktop\quake mod stuff\darkplaces\id1\textures.wad
+ - Warning: Larger than expected texture (490412 bytes): 'BUILDING2'
+ - Warning: Larger than expected texture (1393452 bytes): 'BUILDING1'
+ - Warning: Larger than expected texture (1393452 bytes): 'FLOOR2'
+ - Contains 3 used textures, 100.00 percent of map (71 textures in wad)
+
+Wad files required to run the map: "textures.wad;"
+
+Texture usage is at 0.06 mb (of 32.00 mb MAX)
+0.10 seconds elapsed
+
+-----   END   hlcsg -----
+
+
+
+hlbsp v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlbsp -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlbsp.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\start" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\start" -low -chart 
+
+Current hlbsp Settings
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       4 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [      on ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 33554432 ] [ 33554432 ]
+priority            [     Low ] [  Normal ]
+
+noclip              [     off ] [     off ]
+nofill              [     off ] [     off ]
+noinsidefill        [     off ] [     off ]
+noopt               [     off ] [     off ]
+no clipnode merging [     off ] [     off ]
+null tex. stripping [      on ] [      on ]
+notjunc             [     off ] [     off ]
+nobrink             [     off ] [     off ]
+subdivide size      [     240 ] [     240 ] (Min 64) (Max 512)
+max node size       [    1024 ] [    1024 ] (Min 64) (Max 65536)
+remove hull 2       [     off ] [     off ]
+
+
+SolidBSP [hull 0] 13 (0.00 seconds)
+BSP generation successful, writing portal file 'C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\start.prt'
+SolidBSP [hull 1] 13 (0.00 seconds)
+SolidBSP [hull 2] 13 (0.00 seconds)
+SolidBSP [hull 3] 13 (0.00 seconds)
+Reduced 18 clipnodes to 18
+Reduced 15 texinfos to 5
+Reduced 3 texdatas to 3 (136 bytes to 136)
+Reduced 88 planes to 20
+FixBrinks:
+Increased 18 clipnodes to 18.
+
+Object names  Objects/Maxobjs  Memory / Maxmem  Fullness
+------------  ---------------  ---------------  --------
+models              1/512           64/32768    ( 0.2%)
+planes             20/32768        400/655360   ( 0.1%)
+vertexes          156/65535       1872/786420   ( 0.2%)
+nodes               6/32767        144/786408   ( 0.0%)
+texinfos            5/32767        200/1310680  ( 0.0%)
+faces             132/65535       2640/1310700  ( 0.2%)
+* worldfaces      132/32768          0/0        ( 0.4%)
+clipnodes          18/32767        144/262136   ( 0.1%)
+leaves              2/32760         56/917280   ( 0.0%)
+* visleafs          1/8192           0/0        ( 0.0%)
+marksurfaces      132/65535        264/131070   ( 0.2%)
+surfedges         572/512000      2288/2048000  ( 0.1%)
+edges             287/256000      1148/1024000  ( 0.1%)
+texdata          [variable]        136/33554432  ( 0.0%)
+lightdata        [variable]          0/33554432  ( 0.0%)
+visdata          [variable]          0/8388608  ( 0.0%)
+entdata          [variable]        186/2097152  ( 0.0%)
+* AllocBlock        2/64             0/0        ( 3.1%)
+3 textures referenced
+=== Total BSP file data space used: 9542 bytes ===
+Wad files required to run the map: "textures.wad;"
+0.02 seconds elapsed
+
+-----   END   hlbsp -----
+
+
+

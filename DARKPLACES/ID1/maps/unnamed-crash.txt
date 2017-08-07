@@ -1,0 +1,16 @@
+OS:	Windows 10 (build 15063), 64-bit edition
+wxWidgets:
+wxWidgets Library (wxMSW port)
+Version 3.1.0 (Unicode: wchar_t, debug level: 1),
+compiled at Feb 29 2016 11:31:15
+
+Runtime version of toolkit used is 10.0.
+
+GL_VENDOR:	NVIDIA Corporation
+GL_RENDERER:	GeForce GTX 960/PCIe/SSE2
+GL_VERSION:	4.5.0 NVIDIA 382.05
+TrenchBroom Version:	2.0.0
+TrenchBroom Build:	v2.0.0-RC4 Release
+Reason:	std::exception: bad allocation
+Stack trace:
+

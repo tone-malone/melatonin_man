@@ -1,0 +1,410 @@
+hlcsg v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlcsg -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlcsg.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\test5" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\test5" -low -wadautodetect 
+Entering C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\test5.map
+
+Current hlcsg Settings
+Name                 |  Setting  |  Default
+---------------------|-----------|-------------------------
+threads               [       4 ] [  Varies ]
+verbose               [     off ] [     off ]
+log                   [      on ] [      on ]
+reset logfile         [      on ] [      on ]
+developer             [       0 ] [       0 ]
+chart                 [     off ] [     off ]
+estimate              [     off ] [     off ]
+max texture memory    [ 33554432 ] [ 33554432 ]
+max lighting memory   [ 33554432 ] [ 33554432 ]
+priority              [     Low ] [  Normal ]
+
+noclip                [     off ] [     off ]
+null texture stripping[      on ] [      on ]
+clipnode economy mode [     off ] [     off ]
+clip hull type        [  simple ] [  simple ]
+onlyents              [     off ] [     off ]
+wadtextures           [      on ] [      on ]
+skyclip               [      on ] [      on ]
+hullfile              [    None ] [    None ]
+wadcfg by file        [    None ] [    None ]
+wadcfg by name        [    None ] [    None ]
+nullfile              [    None ] [    None ]
+nullify trigger       [      on ] [      on ]
+min surface area      [   0.000 ] [   0.000 ]
+brush union threshold [   0.000 ] [   0.000 ]
+map scaling           [    None ] [    None ]
+light name optimize   [      on ] [      on ]
+UTF8 game_text        [      on ] [      on ]
+
+Using mapfile wad configuration
+Wadfiles not in use by the map will be excluded
+Wadinclude list :
+[zhlt.wad]
+
+CreateBrush:
+ (3.94 seconds)
+CSGBrush:
+ (0.84 seconds)
+
+Including Wadfile: \users\tom\desktop\quake mod stuff\zips\valve_hammer_editor_353_10032015__2\valve hammer editor\zhlt.wad
+ - Contains 1 used texture, 100.00 percent of map (18 textures in wad)
+
+Wad files required to run the map: (None)
+
+Texture usage is at 0.00 mb (of 32.00 mb MAX)
+4.88 seconds elapsed
+
+-----   END   hlcsg -----
+
+
+
+hlbsp v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlbsp -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlbsp.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\test5" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\test5" -low -chart 
+
+Current hlbsp Settings
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       4 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [      on ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 33554432 ] [ 33554432 ]
+priority            [     Low ] [  Normal ]
+
+noclip              [     off ] [     off ]
+nofill              [     off ] [     off ]
+noinsidefill        [     off ] [     off ]
+noopt               [     off ] [     off ]
+no clipnode merging [     off ] [     off ]
+null tex. stripping [      on ] [      on ]
+notjunc             [     off ] [     off ]
+nobrink             [     off ] [     off ]
+subdivide size      [     240 ] [     240 ] (Min 64) (Max 512)
+max node size       [    1024 ] [    1024 ] (Min 64) (Max 65536)
+remove hull 2       [     off ] [     off ]
+
+
+SolidBSP [hull 0] 500...1000...1500...2000...2500...3000...3500...4000...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (570,1727,278)-(595,1737,279) in hull 0 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+4500...5000...5500...6000...6500...7000...7500...7883 (2.69 seconds)
+Warning: === LEAK in hull 0 ===
+Entity info_player_start @ ( 902, 448, 319)
+Error: 
+  A LEAK is a hole in the map, where the inside of it is exposed to the
+(unwanted) outside region.  The entity listed in the error is just a helpful
+indication of where the beginning of the leak pointfile starts, so the
+beginning of the line can be quickly found and traced to until reaching the
+outside. Unless this entity is accidentally on the outside of the map, it
+probably should not be deleted.  Some complex rotating objects entities need
+their origins outside the map.  To deal with these, just enclose the origin
+brush with a solid world brush
+
+Leak pointfile generated
+
+SolidBSP [hull 1] Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2014,1327,297)-(2180,1409,300) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2032,1296,304)-(2096,1308,309) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2230,1371,296)-(2288,1424,299) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2270,1404,296)-(2352,1474,299) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2223,1423,296)-(2288,1433,296) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2543,1422,317)-(2608,1472,326) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2535,1507,300)-(2571,1583,304) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2480,1537,297)-(2544,1602,300) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2733,1475,326)-(2823,1654,345) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2731,1552,325)-(2755,1656,326) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2575,1495,305)-(2635,1563,314) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2608,1309,330)-(2672,1398,336) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2597,1261,328)-(2627,1391,329) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2544,1253,324)-(2620,1405,328) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2480,1264,317)-(2496,1351,318) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1487,1357,290)-(1574,1488,290) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1450,1392,290)-(1539,1488,290) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1438,1391,290)-(1540,1489,290) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+500...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1857,1440,289)-(1927,1520,290) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1774,1360,287)-(1840,1423,288) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1698,1322,286)-(1805,1406,287) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1771,1465,288)-(1840,1550,289) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2032,1424,294)-(2056,1439,294) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2412,1003,321)-(2515,1120,326) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2479,1192,317)-(2491,1266,318) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2521,1050,321)-(2599,1106,322) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2604,1083,323)-(2661,1186,324) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2608,1157,323)-(2651,1200,324) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2778,1136,341)-(2832,1221,347) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2416,728,337)-(2538,878,345) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+1000...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2546,774,345)-(2608,848,360) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2734,624,446)-(2832,773,469) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1711,1296,287)-(1776,1322,288) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1647,1203,286)-(1743,1323,287) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1584,1199,285)-(1632,1235,286) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1892,923,333)-(2272,1232,411) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1868,1117,325)-(2208,1248,333) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1840,1286,290)-(1904,1316,294) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1904,1185,315)-(2122,1263,325) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2039,855,376)-(2262,1010,404) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2256,926,354)-(2322,1008,386) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2365,1186,307)-(2443,1285,316) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2203,1058,351)-(2325,1170,368) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+1500...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2032,523,315)-(2096,623,318) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2221,350,369)-(2553,544,405) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+2000...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2032,329,316)-(2096,400,334) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2416,719,337)-(2480,764,343) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1939,748,335)-(2056,849,356) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1855,752,338)-(2252,926,355) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2104,624,320)-(2185,642,325) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1904,-16,300)-(1968,48,303) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (144000,144000,144000)-(-144000,-144000,-144000) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1583,297,282)-(1651,357,286) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1968,189,313)-(2010,332,315) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1904,425,304)-(1908,433,304) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+2500...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1943,432,309)-(1997,496,313) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1968,393,309)-(2011,439,312) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1645,430,288)-(1698,528,291) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1648,899,296)-(1710,1050,306) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1671,761,293)-(1760,898,295) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1723,752,310)-(1904,981,315) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1799,751,301)-(1862,799,305) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1835,453,301)-(2236,769,315) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1732,737,295)-(1852,817,301) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1773,485,295)-(2054,770,301) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1584,816,287)-(1641,945,289) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1430,1008,282)-(1497,1149,283) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+3000...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1584,1158,285)-(1661,1218,287) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1488,1103,283)-(1533,1210,284) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2031,1771,351)-(2107,1812,352) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2006,1739,320)-(2143,1936,352) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1952,1680,328)-(2175,1820,351) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1997,1620,303)-(2064,1650,316) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2067,1711,330)-(2192,1898,337) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1975,1662,320)-(2213,1936,330) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2256,1833,297)-(2272,1872,298) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2320,1771,291)-(2347,1874,292) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2222,1951,289)-(2315,2113,290) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2163,1804,295)-(2295,2024,297) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2008,1621,304)-(2248,2000,318) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2256,1709,300)-(2258,1814,301) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2128,2029,294)-(2163,2064,294) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+3500...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2729,1692,327)-(2789,1764,339) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2509,1776,294)-(2562,1875,295) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2541,1721,294)-(2570,1818,295) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2475,1705,292)-(2544,1791,294) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2416,1810,291)-(2480,1925,292) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2480,1840,293)-(2509,1904,294) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2416,1840,291)-(2480,1961,293) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2390,1766,290)-(2543,2015,291) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2304,1632,292)-(2336,1685,293) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2736,1735,329)-(2777,1776,337) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2718,1706,329)-(2802,1814,345) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2608,2060,343)-(2672,2136,386) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2608,2032,343)-(2626,2115,352) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2594,2174,315)-(2672,2220,342) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2608,1790,309)-(2672,1904,315) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1347,1936,298)-(1360,1956,298) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1262,2059,299)-(1316,2267,301) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1296,2032,301)-(1300,2064,301) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+4000...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1398,2124,292)-(1425,2182,293) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1328,1705,329)-(1478,1808,333) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1488,1733,318)-(1552,1815,327) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1277,1677,308)-(1616,1869,318) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1467,1936,294)-(1489,1946,294) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1286,1869,307)-(1360,1896,308) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1291,1872,305)-(1425,1898,307) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1651,1693,293)-(1709,1737,294) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1336,1584,293)-(1392,1642,298) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1305,1648,304)-(1502,1709,318) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1766,1578,289)-(1812,1616,289) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1479,1570,288)-(1573,1610,289) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1759,1631,290)-(1812,1696,291) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1740,1818,292)-(1776,1873,292) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1840,1672,301)-(1884,1847,303) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1502,2166,293)-(1627,2235,293) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1454,2159,292)-(1585,2237,293) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1471,2159,292)-(1543,2224,292) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1492,2091,291)-(1586,2173,292) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1377,2148,292)-(1425,2227,293) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1370,2150,292)-(1440,2244,293) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1427,2150,292)-(1494,2239,292) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1592,1936,291)-(1618,1952,291) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1494,2000,290)-(1554,2067,291) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+4500...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1648,2186,298)-(1742,2224,303) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1648,2141,293)-(1694,2160,293) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1878,2067,293)-(1994,2126,294) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2537,2204,290)-(2608,2292,294) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2544,2320,285)-(2608,2350,286) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2470,2384,283)-(2548,2433,284) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2455,2320,283)-(2500,2391,285) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2382,2509,285)-(2384,2530,285) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2379,2543,285)-(2412,2552,285) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2316,2527,285)-(2384,2575,287) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2374,2165,287)-(2416,2193,287) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2316,2167,287)-(2357,2181,287) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2384,2401,286)-(2388,2452,286) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2569,2587,292)-(2660,2626,295) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2669,2800,387)-(2774,2832,392) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+5000...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2325,2647,305)-(2832,2832,351) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2352,2665,304)-(2419,2736,305) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2507,2465,284)-(2580,2482,284) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2734,2439,283)-(2772,2455,286) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2692,2384,283)-(2772,2450,284) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2747,2384,284)-(2777,2390,284) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1263,2794,360)-(1376,2832,362) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1136,2792,343)-(1200,2832,347) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1257,2734,336)-(1328,2754,342) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1957,2796,282)-(2036,2832,283) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1813,2710,283)-(2070,2832,284) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1866,2684,285)-(1977,2711,286) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+5500...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1296,2257,298)-(1310,2321,299) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1169,2532,304)-(1257,2640,319) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1296,2254,295)-(1329,2448,297) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1419,2286,294)-(1512,2512,295) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1305,2575,299)-(1360,2608,301) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1648,2345,349)-(1830,2481,384) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1920,2288,335)-(2024,2327,352) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2090,2194,295)-(2192,2249,305) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+6000...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2112,2519,303)-(2261,2609,311) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2099,2513,294)-(2297,2636,303) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2256,2582,285)-(2318,2640,287) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2128,2640,288)-(2192,2648,292) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1168,1839,327)-(1188,1910,331) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (934,1047,322)-(985,1136,329) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (942,1101,315)-(1012,1187,322) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (803,1352,326)-(873,1425,339) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (906,1424,312)-(912,1445,312) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1217,1647,299)-(1325,1690,302) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1079,1712,308)-(1110,1719,308) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1040,1167,296)-(1105,1232,299) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (921,1279,305)-(976,1415,311) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1040,1424,296)-(1117,1499,298) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1056,1344,294)-(1105,1416,296) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1050,1363,294)-(1135,1488,296) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1044,1625,301)-(1106,1648,302) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1046,1642,301)-(1114,1672,304) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+6500...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1275,1514,285)-(1296,1539,292) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1309,1584,293)-(1354,1634,294) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1199,1473,285)-(1416,1636,293) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (-80000,-53530,285)-(1824,1690,293) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (-80000,-53530,285)-(1824,1690,292) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1209,1484,285)-(1296,1584,294) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1168,1253,291)-(1233,1341,292) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1220,1290,290)-(1297,1352,291) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1282,1152,287)-(1360,1302,287) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1334,899,281)-(1368,941,282) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1332,943,282)-(1456,1031,283) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1351,855,280)-(1392,904,281) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1455,603,282)-(1502,756,284) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1227,176,267)-(1372,208,282) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+7000...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (872,835,315)-(987,979,350) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1396,402,281)-(1428,458,281) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1402,400,281)-(1495,464,281) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1379,449,278)-(1418,479,281) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1167,383,280)-(1232,400,281) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1160,385,280)-(1176,398,282) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1264,440,274)-(1328,530,278) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1085,558,280)-(1104,618,281) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1237,784,279)-(1296,847,280) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1378,766,278)-(1432,872,280) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1232,944,283)-(1255,987,283) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1238,941,282)-(1319,1002,283) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1353,749,276)-(1387,799,277) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1391,571,280)-(1481,661,281) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1245,750,279)-(1298,824,280) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1168,815,281)-(1221,880,282) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1233,750,279)-(1272,809,280) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1100,697,278)-(1171,752,279) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1163,653,277)-(1227,698,278) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+7500...8000...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (400,368,323)-(442,384,324) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (483,542,392)-(784,880,435) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (488,491,370)-(760,777,392) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (486,474,363)-(727,683,370) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (482,448,349)-(716,649,363) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (474,958,411)-(546,1105,414) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (517,1040,411)-(560,1105,414) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (627,1232,384)-(669,1302,391) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+8500...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (642,1085,397)-(693,1179,400) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (621,725,415)-(772,982,421) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (535,687,413)-(784,1006,422) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1069,429,280)-(1080,505,280) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1079,335,278)-(1138,579,289) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1075,430,280)-(1105,493,280) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (931,479,282)-(1020,559,284) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1035,430,280)-(1052,455,280) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (709,386,312)-(791,459,355) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (888,323,285)-(960,391,287) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (904,368,286)-(925,400,286) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (292,432,331)-(341,524,335) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (282,476,330)-(419,601,335) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+9000...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (509,2128,318)-(558,2192,340) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (555,2133,314)-(642,2193,331) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (236,2570,273)-(274,2629,273) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (449,2625,268)-(478,2713,269) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (412,2486,270)-(465,2546,271) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (361,2665,269)-(403,2717,270) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (378,2543,266)-(497,2671,268) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (400,2448,270)-(467,2541,271) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (325,2576,270)-(336,2611,270) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (395,2736,268)-(439,2769,268) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (490,2015,343)-(528,2048,347) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (198,2124,405)-(208,2132,407) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (464,2038,343)-(528,2082,355) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (461,2140,318)-(524,2192,335) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (208,2198,306)-(398,2256,341) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (400,2244,289)-(440,2256,294) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (144,2312,283)-(208,2364,289) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (257,2306,277)-(370,2335,278) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+9500...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (-16,2371,321)-(29,2512,328) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (201,2383,274)-(305,2518,276) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (207,2383,275)-(224,2447,276) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (144,2384,275)-(217,2449,277) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (705,2023,302)-(987,2303,406) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (796,2280,297)-(888,2377,302) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1140,2435,314)-(1170,2499,317) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1118,2320,323)-(1197,2419,343) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1048,2193,379)-(1113,2273,391) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (1021,2050,394)-(1104,2243,411) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (695,1886,323)-(853,1983,330) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (144000,144000,144000)-(-144000,-144000,-144000) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (685,1894,319)-(738,1937,323) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (688,1839,318)-(817,1904,319) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+10000...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (941,2583,286)-(1059,2663,326) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (939,2711,274)-(954,2801,277) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (623,2798,263)-(688,2832,263) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (752,2638,265)-(761,2645,265) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (732,2618,265)-(752,2640,266) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (745,2617,264)-(802,2704,265) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (623,2640,263)-(688,2704,265) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (513,2576,264)-(592,2708,268) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (521,2524,268)-(528,2593,268) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (511,2523,264)-(577,2744,268) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (688,2509,266)-(752,2578,267) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+10500...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (187,1481,324)-(400,1716,342) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (329,1706,324)-(390,1719,328) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (302,1615,324)-(424,1694,327) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (552,1757,313)-(658,1790,315) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (428,1703,315)-(601,1764,320) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (336,1867,335)-(406,1911,346) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (144,2046,405)-(208,2109,421) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (144,2096,405)-(208,2132,421) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (150,1398,330)-(180,1426,331) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (33,1244,333)-(117,1297,334) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (128,1296,331)-(176,1376,333) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (427,1414,345)-(505,1491,357) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (-16,1968,393)-(75,2047,429) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+11000...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (170,1648,330)-(211,1677,330) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (24,1551,330)-(82,1593,330) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (124,1543,323)-(211,1587,329) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (164,1712,331)-(229,1726,332) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (-80000,-2565,326)-(77,1591,330) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (-80000,1646,323)-(80000,80000,693) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (-76688,1559,-528)-(42296,80004,330) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (-16,1549,329)-(124,1706,330) in hull 1 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+Warning: Ambiguous leafnode content ( EMPTY 

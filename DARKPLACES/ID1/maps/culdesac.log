@@ -1,0 +1,191 @@
+hlcsg v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlcsg -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlcsg.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\culdesac" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\culdesac" -low -wadautodetect 
+Entering C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\culdesac.map
+
+Current hlcsg Settings
+Name                 |  Setting  |  Default
+---------------------|-----------|-------------------------
+threads               [       4 ] [  Varies ]
+verbose               [     off ] [     off ]
+log                   [      on ] [      on ]
+reset logfile         [      on ] [      on ]
+developer             [       0 ] [       0 ]
+chart                 [     off ] [     off ]
+estimate              [     off ] [     off ]
+max texture memory    [ 33554432 ] [ 33554432 ]
+max lighting memory   [ 33554432 ] [ 33554432 ]
+priority              [     Low ] [  Normal ]
+
+noclip                [     off ] [     off ]
+null texture stripping[      on ] [      on ]
+clipnode economy mode [     off ] [     off ]
+clip hull type        [  simple ] [  simple ]
+onlyents              [     off ] [     off ]
+wadtextures           [      on ] [      on ]
+skyclip               [      on ] [      on ]
+hullfile              [    None ] [    None ]
+wadcfg by file        [    None ] [    None ]
+wadcfg by name        [    None ] [    None ]
+nullfile              [    None ] [    None ]
+nullify trigger       [      on ] [      on ]
+min surface area      [   0.000 ] [   0.000 ]
+brush union threshold [   0.000 ] [   0.000 ]
+map scaling           [    None ] [    None ]
+light name optimize   [      on ] [      on ]
+UTF8 game_text        [      on ] [      on ]
+
+Using mapfile wad configuration
+Wadfiles not in use by the map will be excluded
+Wadinclude list :
+[zhlt.wad]
+
+CreateBrush:
+ (0.01 seconds)
+CSGBrush:
+ (0.04 seconds)
+
+Using Wadfile: \users\tom\desktop\quake mod stuff\darkplaces\id1\textures.wad
+ - Warning: Larger than expected texture (490412 bytes): 'BUILDING2'
+ - Warning: Larger than expected texture (1393452 bytes): 'BUILDING1'
+ - Warning: Larger than expected texture (1393452 bytes): 'FLOOR2'
+ - Contains 3 used textures, 100.00 percent of map (54 textures in wad)
+
+Wad files required to run the map: "textures.wad;"
+
+Texture usage is at 0.25 mb (of 32.00 mb MAX)
+0.10 seconds elapsed
+
+-----   END   hlcsg -----
+
+
+
+hlbsp v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlbsp -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlbsp.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\culdesac" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\culdesac" -low -chart 
+
+Current hlbsp Settings
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       4 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [      on ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 33554432 ] [ 33554432 ]
+priority            [     Low ] [  Normal ]
+
+noclip              [     off ] [     off ]
+nofill              [     off ] [     off ]
+noinsidefill        [     off ] [     off ]
+noopt               [     off ] [     off ]
+no clipnode merging [     off ] [     off ]
+null tex. stripping [      on ] [      on ]
+notjunc             [     off ] [     off ]
+nobrink             [     off ] [     off ]
+subdivide size      [     240 ] [     240 ] (Min 64) (Max 512)
+max node size       [    1024 ] [    1024 ] (Min 64) (Max 65536)
+remove hull 2       [     off ] [     off ]
+
+
+SolidBSP [hull 0] 266 (0.02 seconds)
+Warning: === LEAK in hull 0 ===
+Entity place_model @ (  -8,-1216,  48)
+Error: 
+  A LEAK is a hole in the map, where the inside of it is exposed to the
+(unwanted) outside region.  The entity listed in the error is just a helpful
+indication of where the beginning of the leak pointfile starts, so the
+beginning of the line can be quickly found and traced to until reaching the
+outside. Unless this entity is accidentally on the outside of the map, it
+probably should not be deleted.  Some complex rotating objects entities need
+their origins outside the map.  To deal with these, just enclose the origin
+brush with a solid world brush
+
+Leak pointfile generated
+
+SolidBSP [hull 1] 244 (0.01 seconds)
+Warning: === LEAK in hull 1 ===
+Entity info_player_start @ ( -16,-448,  48)
+SolidBSP [hull 2] 236 (0.01 seconds)
+Warning: === LEAK in hull 2 ===
+Entity info_player_start @ ( -16,-448,  48)
+SolidBSP [hull 3] 258 (0.01 seconds)
+Warning: === LEAK in hull 3 ===
+Entity info_player_start @ ( -16,-448,  48)
+Reduced 735 clipnodes to 706
+Reduced 151 texinfos to 84
+Reduced 3 texdatas to 3 (136 bytes to 136)
+Reduced 1794 planes to 489
+FixBrinks:
+Increased 706 clipnodes to 736.
+
+Object names  Objects/Maxobjs  Memory / Maxmem  Fullness
+------------  ---------------  ---------------  --------
+models              1/512           64/32768    ( 0.2%)
+planes            489/32768       9780/655360   ( 1.5%)
+vertexes         2566/65535      30792/786420   ( 3.9%)
+nodes             265/32767       6360/786408   ( 0.8%)
+texinfos           84/32767       3360/1310680  ( 0.3%)
+faces            2020/65535      40400/1310700  ( 3.1%)
+* worldfaces     2020/32768          0/0        ( 6.2%)
+clipnodes         736/32767       5888/262136   ( 2.2%)
+leaves            157/32760       4396/917280   ( 0.5%)
+* visleafs        156/8192           0/0        ( 1.9%)
+marksurfaces     2253/65535       4506/131070   ( 3.4%)
+surfedges        9208/512000     36832/2048000  ( 1.8%)
+edges            4605/256000     18420/1024000  ( 1.8%)
+texdata          [variable]        136/33554432  ( 0.0%)
+lightdata        [variable]          0/33554432  ( 0.0%)
+visdata          [variable]          0/8388608  ( 0.0%)
+entdata          [variable]       3610/2097152  ( 0.2%)
+* AllocBlock       19/64             0/0        (29.7%)
+3 textures referenced
+=== Total BSP file data space used: 164544 bytes ===
+Wad files required to run the map: "textures.wad;"
+0.18 seconds elapsed
+
+-----   END   hlbsp -----
+
+
+
+hlvis v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlvis -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlvis.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\culdesac" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\culdesac" -low 
+>> There was a problem compiling the map.
+>> Check the file C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\culdesac.log for the cause.
+
+-----   END   hlvis -----
+
+
+
+hlrad v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlrad -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlrad.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\culdesac" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\culdesac" -low 
+>> There was a problem compiling the map.
+>> Check the file C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\culdesac.log for the cause.
+
+-----   END   hlrad -----
+
+
+

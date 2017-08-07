@@ -1,0 +1,5 @@
+hlcsg: Error: Exceeded MAX_MAP_BRUSHES
+Description: The maximum number of brushes for a map has been reached
+Howto Fix: self explanitory
+
+

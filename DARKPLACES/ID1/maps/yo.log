@@ -1,0 +1,304 @@
+hlcsg v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlcsg -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlcsg.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\yo" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\yo" -low -wadautodetect 
+Entering C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\yo.map
+
+Current hlcsg Settings
+Name                 |  Setting  |  Default
+---------------------|-----------|-------------------------
+threads               [       4 ] [  Varies ]
+verbose               [     off ] [     off ]
+log                   [      on ] [      on ]
+reset logfile         [      on ] [      on ]
+developer             [       0 ] [       0 ]
+chart                 [     off ] [     off ]
+estimate              [     off ] [     off ]
+max texture memory    [ 33554432 ] [ 33554432 ]
+max lighting memory   [ 33554432 ] [ 33554432 ]
+priority              [     Low ] [  Normal ]
+
+noclip                [     off ] [     off ]
+null texture stripping[      on ] [      on ]
+clipnode economy mode [     off ] [     off ]
+clip hull type        [  simple ] [  simple ]
+onlyents              [     off ] [     off ]
+wadtextures           [      on ] [      on ]
+skyclip               [      on ] [      on ]
+hullfile              [    None ] [    None ]
+wadcfg by file        [    None ] [    None ]
+wadcfg by name        [    None ] [    None ]
+nullfile              [    None ] [    None ]
+nullify trigger       [      on ] [      on ]
+min surface area      [   0.000 ] [   0.000 ]
+brush union threshold [   0.000 ] [   0.000 ]
+map scaling           [    None ] [    None ]
+light name optimize   [      on ] [      on ]
+UTF8 game_text        [      on ] [      on ]
+
+Using mapfile wad configuration
+Wadfiles not in use by the map will be excluded
+Wadinclude list :
+[zhlt.wad]
+
+CreateBrush:
+ (0.01 seconds)
+CSGBrush:
+ (0.06 seconds)
+
+Including Wadfile: \users\tom\desktop\quake mod stuff\zips\valve_hammer_editor_353_10032015__2\valve hammer editor\zhlt.wad
+ - Contains 2 used textures, 33.33 percent of map (18 textures in wad)
+Using Wadfile: \users\tom\desktop\quake mod stuff\darkplaces\id1\textures.wad
+ - Warning: Larger than expected texture (490412 bytes): 'BUILDING2'
+ - Warning: Larger than expected texture (1393452 bytes): 'BUILDING1'
+ - Warning: Larger than expected texture (1393452 bytes): 'FLOOR2'
+ - Contains 4 used textures, 66.67 percent of map (54 textures in wad)
+
+Wad files required to run the map: "textures.wad;"
+
+Texture usage is at 0.45 mb (of 32.00 mb MAX)
+0.14 seconds elapsed
+
+-----   END   hlcsg -----
+
+
+
+hlbsp v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlbsp -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlbsp.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\yo" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\yo" -low -chart 
+
+Current hlbsp Settings
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       4 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [      on ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 33554432 ] [ 33554432 ]
+priority            [     Low ] [  Normal ]
+
+noclip              [     off ] [     off ]
+nofill              [     off ] [     off ]
+noinsidefill        [     off ] [     off ]
+noopt               [     off ] [     off ]
+no clipnode merging [     off ] [     off ]
+null tex. stripping [      on ] [      on ]
+notjunc             [     off ] [     off ]
+nobrink             [     off ] [     off ]
+subdivide size      [     240 ] [     240 ] (Min 64) (Max 512)
+max node size       [    1024 ] [    1024 ] (Min 64) (Max 65536)
+remove hull 2       [     off ] [     off ]
+
+
+SolidBSP [hull 0] 325 (0.01 seconds)
+BSP generation successful, writing portal file 'C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\yo.prt'
+SolidBSP [hull 1] 383 (0.01 seconds)
+SolidBSP [hull 2] 380 (0.01 seconds)
+SolidBSP [hull 3] 398 (0.01 seconds)
+Reduced 935 clipnodes to 846
+Reduced 21 texinfos to 19
+Reduced 5 texdatas to 5 (1336 bytes to 1336)
+Reduced 1444 planes to 453
+FixBrinks:
+Increased 846 clipnodes to 955.
+
+Object names  Objects/Maxobjs  Memory / Maxmem  Fullness
+------------  ---------------  ---------------  --------
+models              2/512          128/32768    ( 0.4%)
+planes            453/32768       9060/655360   ( 1.4%)
+vertexes         1574/65535      18888/786420   ( 2.4%)
+nodes             321/32767       7704/786408   ( 1.0%)
+texinfos           19/32767        760/1310680  ( 0.1%)
+faces            1358/65535      27160/1310700  ( 2.1%)
+* worldfaces     1352/32768          0/0        ( 4.1%)
+clipnodes         955/32767       7640/262136   ( 2.9%)
+leaves            176/32760       4928/917280   ( 0.5%)
+* visleafs        169/8192           0/0        ( 2.1%)
+marksurfaces     1484/65535       2968/131070   ( 2.3%)
+surfedges        6151/512000     24604/2048000  ( 1.2%)
+edges            3181/256000     12724/1024000  ( 1.2%)
+texdata          [variable]       1336/33554432  ( 0.0%)
+lightdata        [variable]          0/33554432  ( 0.0%)
+visdata          [variable]          0/8388608  ( 0.0%)
+entdata          [variable]        432/2097152  ( 0.0%)
+* AllocBlock       11/64             0/0        (17.2%)
+5 textures referenced
+=== Total BSP file data space used: 118332 bytes ===
+Wad files required to run the map: "textures.wad;"
+0.18 seconds elapsed
+
+-----   END   hlbsp -----
+
+
+
+hlvis v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlvis -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlvis.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\yo" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\yo" -low 
+ 169 portalleafs
+ 444 numportals
+
+-= Current hlvis Settings =-
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       4 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [     off ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 33554432 ] [ 33554432 ]
+max vis distance    [       0 ] [       0 ]
+priority            [     Low ] [  Normal ]
+
+fast vis            [     off ] [     off ]
+full vis            [     off ] [     off ]
+
+
+BasePortalVis:
+ (0.00 seconds)
+LeafThread:
+ (0.05 seconds)
+average leafs visible: 63
+g_visdatasize:3712  compressed from 3718
+0.06 seconds elapsed
+
+-----   END   hlvis -----
+
+
+
+hlrad v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlrad -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlrad.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\yo" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\yo" -low 
+
+-= Current hlrad Settings =-
+Name                | Setting             | Default
+--------------------|---------------------|-------------------------
+threads              [                 4 ] [            Varies ]
+verbose              [               off ] [               off ]
+log                  [                on ] [                on ]
+developer            [                 0 ] [                 0 ]
+chart                [               off ] [               off ]
+estimate             [               off ] [               off ]
+max texture memory   [          33554432 ] [          33554432 ]
+max lighting memory  [          33554432 ] [          33554432 ]
+priority             [               Low ] [            Normal ]
+
+fast rad             [               off ] [               off ]
+vismatrix algorithm  [            Sparse ] [            Sparse ]
+oversampling (-extra)[               off ] [               off ]
+bounces              [                 8 ] [                 8 ]
+ambient light        [ 0.000 0.000 0.000 ] [ 0.000 0.000 0.000 ]
+circus mode          [               off ] [               off ]
+
+smoothing threshold  [            50.000 ] [            50.000 ]
+smoothing threshold 2[         no change ] [         no change ]
+direct threshold     [            10.000 ] [            10.000 ]
+direct light scale   [             1.000 ] [             1.000 ]
+coring threshold     [             0.001 ] [             0.001 ]
+patch interpolation  [                on ] [                on ]
+
+texscale             [                on ] [                on ]
+patch subdividing    [                on ] [                on ]
+chop value           [            64.000 ] [            64.000 ]
+texchop value        [            32.000 ] [            32.000 ]
+
+global fade          [             1.000 ] [             1.000 ]
+global light scale   [ 2.000 2.000 2.000 ] [ 2.000 2.000 2.000 ]
+global gamma         [ 0.550 0.550 0.550 ] [ 0.550 0.550 0.550 ]
+global light scale   [             2.000 ] [             2.000 ]
+global sky diffusion [             1.000 ] [             1.000 ]
+
+spread angles        [                on ] [                on ]
+opaque entities      [                on ] [                on ]
+sky lighting fix     [                on ] [                on ]
+incremental          [               off ] [               off ]
+dump                 [               off ] [               off ]
+
+colour jitter        [       0.0 0.0 0.0 ] [       0.0 0.0 0.0 ]
+monochromatic jitter [       0.0 0.0 0.0 ] [       0.0 0.0 0.0 ]
+
+custom shadows with bounce light
+                     [               off ] [               off ]
+rgb transfers        [               off ] [               off ]
+minimum final light  [                 0 ] [                 0 ]
+size of transfer     [         1 (16bit) ] [         1 (16bit) ]
+size of rgbtransfer  [         2 (32bit) ] [         2 (32bit) ]
+soft sky             [                on ] [                on ]
+translucent depth    [             2.000 ] [             2.000 ]
+block opaque         [                on ] [                on ]
+ignore textures      [               off ] [               off ]
+reflectivity gamma   [             1.760 ] [             1.760 ]
+reflectivity scale   [             0.700 ] [             0.700 ]
+blur size            [             1.000 ] [             1.000 ]
+no emitter range     [               off ] [               off ]
+
+
+Load Textures:
+Using Wadfile: C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\yo.wa_
+5 textures referenced
+Reading texlights from 'C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\lights.rad'
+0 opaque models
+0 opaque faces
+1358 faces
+Create Patches : 10865 base patches
+193587 square feet [27876534.00 square inches]
+light at (-605.000000,-511.000000,928.000000) has bad or missing '_light' value : ''
+light at (532.000000,-456.000000,94.000000) has bad or missing '_light' value : ''
+0 direct lights and 0 fast direct lights
+1 light styles
+
+BuildFacelights:
+ (0.23 seconds)
+BuildVisLeafs:
+ (3.69 seconds)
+visibility matrix   :  10.4 megs
+MakeScales:
+ (1.35 seconds)
+Transfer Lists :    21418062 :   21.42M transfers
+       Indices :     3226532 :    3.08M bytes
+          Data :    42867891 :   40.88M bytes
+Bounce 1 GatherLight:
+ (0.13 seconds)
+Bounce 2 GatherLight:
+ (0.13 seconds)
+Bounce 3 GatherLight:
+ (0.13 seconds)
+Bounce 4 GatherLight:
+ (0.13 seconds)
+Bounce 5 GatherLight:
+ (0.13 seconds)
+Bounce 6 GatherLight:
+ (0.13 seconds)
+Bounce 7 GatherLight:
+ (0.13 seconds)
+Bounce 8 GatherLight:
+ (0.13 seconds)
+FinalLightFace:
+ (0.49 seconds)
+7.92 seconds elapsed
+
+-----   END   hlrad -----
+
+
+

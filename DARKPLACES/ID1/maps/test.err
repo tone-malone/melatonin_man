@@ -1,0 +1,16 @@
+hlbsp: Error: 
+  A LEAK is a hole in the map, where the inside of it is exposed to the
+(unwanted) outside region.  The entity listed in the error is just a helpful
+indication of where the beginning of the leak pointfile starts, so the
+beginning of the line can be quickly found and traced to until reaching the
+outside. Unless this entity is accidentally on the outside of the map, it
+probably should not be deleted.  Some complex rotating objects entities need
+their origins outside the map.  To deal with these, just enclose the origin
+brush with a solid world brush
+
+
+hlbsp: Error: Exceeded MAX_MAP_CLIPNODES
+Description: The map has a problem which must be fixed
+Howto Fix: Check the file http://www.zhlt.info/common-mapping-problems.html for a detailed explanation of this problem
+
+

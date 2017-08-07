@@ -1,0 +1,317 @@
+hlcsg v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlcsg -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlcsg.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\dm_caves" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\dm_caves" -low -wadautodetect 
+Entering C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\dm_caves.map
+
+Current hlcsg Settings
+Name                 |  Setting  |  Default
+---------------------|-----------|-------------------------
+threads               [       4 ] [  Varies ]
+verbose               [     off ] [     off ]
+log                   [      on ] [      on ]
+reset logfile         [      on ] [      on ]
+developer             [       0 ] [       0 ]
+chart                 [     off ] [     off ]
+estimate              [     off ] [     off ]
+max texture memory    [ 33554432 ] [ 33554432 ]
+max lighting memory   [ 33554432 ] [ 33554432 ]
+priority              [     Low ] [  Normal ]
+
+noclip                [     off ] [     off ]
+null texture stripping[      on ] [      on ]
+clipnode economy mode [     off ] [     off ]
+clip hull type        [  simple ] [  simple ]
+onlyents              [     off ] [     off ]
+wadtextures           [      on ] [      on ]
+skyclip               [      on ] [      on ]
+hullfile              [    None ] [    None ]
+wadcfg by file        [    None ] [    None ]
+wadcfg by name        [    None ] [    None ]
+nullfile              [    None ] [    None ]
+nullify trigger       [      on ] [      on ]
+min surface area      [   0.000 ] [   0.000 ]
+brush union threshold [   0.000 ] [   0.000 ]
+map scaling           [    None ] [    None ]
+light name optimize   [      on ] [      on ]
+UTF8 game_text        [      on ] [      on ]
+
+Using mapfile wad configuration
+Wadfiles not in use by the map will be excluded
+Wadinclude list :
+[zhlt.wad]
+
+CreateBrush:
+Warning: Illegal Brush (edge without opposite face): Entity 0, Brush 87
+
+Warning: Illegal Brush (edge without opposite face): Entity 0, Brush 223
+
+ (0.05 seconds)
+CSGBrush:
+ (0.22 seconds)
+
+Including Wadfile: \users\tom\desktop\quake mod stuff\zips\valve_hammer_editor_353_10032015__2\valve hammer editor\zhlt.wad
+ - Contains 2 used textures, 18.18 percent of map (18 textures in wad)
+Using Wadfile: \users\tom\desktop\quake mod stuff\darkplaces\id1\textures.wad
+ - Warning: Larger than expected texture (490412 bytes): 'BUILDING2'
+ - Warning: Larger than expected texture (1393452 bytes): 'BUILDING1'
+ - Warning: Larger than expected texture (1393452 bytes): 'FLOOR2'
+ - Contains 9 used textures, 81.82 percent of map (54 textures in wad)
+
+Wad files required to run the map: "textures.wad;"
+
+Texture usage is at 0.94 mb (of 32.00 mb MAX)
+0.33 seconds elapsed
+
+-----   END   hlcsg -----
+
+
+
+hlbsp v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlbsp -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlbsp.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\dm_caves" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\dm_caves" -low -chart 
+
+Current hlbsp Settings
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       4 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [      on ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 33554432 ] [ 33554432 ]
+priority            [     Low ] [  Normal ]
+
+noclip              [     off ] [     off ]
+nofill              [     off ] [     off ]
+noinsidefill        [     off ] [     off ]
+noopt               [     off ] [     off ]
+no clipnode merging [     off ] [     off ]
+null tex. stripping [      on ] [      on ]
+notjunc             [     off ] [     off ]
+nobrink             [     off ] [     off ]
+subdivide size      [     240 ] [     240 ] (Min 64) (Max 512)
+max node size       [    1024 ] [    1024 ] (Min 64) (Max 65536)
+remove hull 2       [     off ] [     off ]
+
+
+SolidBSP [hull 0] 500...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (3059,-2696,507)-(3064,-2168,512) in hull 0 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+1000...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (818,-2166,192)-(864,-2121,261) in hull 0 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+1500...1983 (0.14 seconds)
+BSP generation successful, writing portal file 'C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\dm_caves.prt'
+SolidBSP [hull 1] 500...1000...1500...2000...2099 (0.15 seconds)
+SolidBSP [hull 2] 500...1000...1500...2000...2084 (0.14 seconds)
+SolidBSP [hull 3] 500...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (2908,-2376,146)-(2968,-2324,274) in hull 3 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+1000...1500...Warning: Ambiguous leafnode content ( EMPTY and SOLID ) at (144000,144000,144000)-(-144000,-144000,-144000) in hull 3 of model 0 (entity: classname "worldspawn", origin "", targetname "")
+2000...2257 (0.17 seconds)
+Reduced 6155 clipnodes to 5456
+Reduced 55 texinfos to 55
+Reduced 10 texdatas to 10 (1556 bytes to 1556)
+Reduced 7470 planes to 2429
+FixBrinks:
+Increased 5456 clipnodes to 5626.
+
+Object names  Objects/Maxobjs  Memory / Maxmem  Fullness
+------------  ---------------  ---------------  --------
+models              1/512           64/32768    ( 0.2%)
+planes           2429/32768      48580/655360   ( 7.4%)
+vertexes         5781/65535      69372/786420   ( 8.8%)
+nodes            1980/32767      47520/786408   ( 6.0%)
+texinfos           55/32767       2200/1310680  ( 0.2%)
+faces            4299/65535      85980/1310700  ( 6.6%)
+* worldfaces     4299/32768          0/0        (13.1%)
+clipnodes        5626/32767      45008/262136   (17.2%)
+leaves           1195/32760      33460/917280   ( 3.6%)
+* visleafs       1194/8192           0/0        (14.6%)
+marksurfaces     5457/65535      10914/131070   ( 8.3%)
+surfedges       20520/512000     82080/2048000  ( 4.0%)
+edges           10333/256000     41332/1024000  ( 4.0%)
+texdata          [variable]       1556/33554432  ( 0.0%)
+lightdata        [variable]          0/33554432  ( 0.0%)
+visdata          [variable]          0/8388608  ( 0.0%)
+entdata          [variable]       2327/2097152  ( 0.1%)
+* AllocBlock       23/64             0/0        (35.9%)
+10 textures referenced
+=== Total BSP file data space used: 470393 bytes ===
+Wad files required to run the map: "textures.wad;"
+1.22 seconds elapsed
+
+-----   END   hlbsp -----
+
+
+
+hlvis v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlvis -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlvis.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\dm_caves" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\dm_caves" -low 
+1194 portalleafs
+4013 numportals
+
+-= Current hlvis Settings =-
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       4 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [     off ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 33554432 ] [ 33554432 ]
+max vis distance    [       0 ] [       0 ]
+priority            [     Low ] [  Normal ]
+
+fast vis            [     off ] [     off ]
+full vis            [     off ] [     off ]
+
+
+BasePortalVis:
+ (0.36 seconds)
+LeafThread:
+ (20.35 seconds)
+Warning: Leaf portals saw into leaf
+    Problem at portal between leaves 1057 and 1067:
+       (512.000 -3456.000 256.000)
+    (512.354 -3455.646 256.709)
+    (527.371 -3440.629 264.249)
+    (523.138 -3444.862 256.000)
+
+average leafs visible: 226
+g_visdatasize:111464  compressed from 179100
+20.75 seconds elapsed
+
+-----   END   hlvis -----
+
+
+
+hlrad v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlrad -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlrad.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\dm_caves" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\dm_caves" -low 
+
+-= Current hlrad Settings =-
+Name                | Setting             | Default
+--------------------|---------------------|-------------------------
+threads              [                 4 ] [            Varies ]
+verbose              [               off ] [               off ]
+log                  [                on ] [                on ]
+developer            [                 0 ] [                 0 ]
+chart                [               off ] [               off ]
+estimate             [               off ] [               off ]
+max texture memory   [          33554432 ] [          33554432 ]
+max lighting memory  [          33554432 ] [          33554432 ]
+priority             [               Low ] [            Normal ]
+
+fast rad             [               off ] [               off ]
+vismatrix algorithm  [            Sparse ] [            Sparse ]
+oversampling (-extra)[               off ] [               off ]
+bounces              [                 8 ] [                 8 ]
+ambient light        [ 0.000 0.000 0.000 ] [ 0.000 0.000 0.000 ]
+circus mode          [               off ] [               off ]
+
+smoothing threshold  [            50.000 ] [            50.000 ]
+smoothing threshold 2[         no change ] [         no change ]
+direct threshold     [            10.000 ] [            10.000 ]
+direct light scale   [             1.000 ] [             1.000 ]
+coring threshold     [             0.001 ] [             0.001 ]
+patch interpolation  [                on ] [                on ]
+
+texscale             [                on ] [                on ]
+patch subdividing    [                on ] [                on ]
+chop value           [            64.000 ] [            64.000 ]
+texchop value        [            32.000 ] [            32.000 ]
+
+global fade          [             1.000 ] [             1.000 ]
+global light scale   [ 2.000 2.000 2.000 ] [ 2.000 2.000 2.000 ]
+global gamma         [ 0.550 0.550 0.550 ] [ 0.550 0.550 0.550 ]
+global light scale   [             2.000 ] [             2.000 ]
+global sky diffusion [             1.000 ] [             1.000 ]
+
+spread angles        [                on ] [                on ]
+opaque entities      [                on ] [                on ]
+sky lighting fix     [                on ] [                on ]
+incremental          [               off ] [               off ]
+dump                 [               off ] [               off ]
+
+colour jitter        [       0.0 0.0 0.0 ] [       0.0 0.0 0.0 ]
+monochromatic jitter [       0.0 0.0 0.0 ] [       0.0 0.0 0.0 ]
+
+custom shadows with bounce light
+                     [               off ] [               off ]
+rgb transfers        [               off ] [               off ]
+minimum final light  [                 0 ] [                 0 ]
+size of transfer     [         1 (16bit) ] [         1 (16bit) ]
+size of rgbtransfer  [         2 (32bit) ] [         2 (32bit) ]
+soft sky             [                on ] [                on ]
+translucent depth    [             2.000 ] [             2.000 ]
+block opaque         [                on ] [                on ]
+ignore textures      [               off ] [               off ]
+reflectivity gamma   [             1.760 ] [             1.760 ]
+reflectivity scale   [             0.700 ] [             0.700 ]
+blur size            [             1.000 ] [             1.000 ]
+no emitter range     [               off ] [               off ]
+
+
+Load Textures:
+Using Wadfile: C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\dm_caves.wa_
+10 textures referenced
+Reading texlights from 'C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\lights.rad'
+0 opaque models
+0 opaque faces
+4299 faces
+Create Patches : 19859 base patches
+328865 square feet [47356608.00 square inches]
+19 direct lights and 0 fast direct lights
+4 light styles
+
+BuildFacelights:
+ (0.83 seconds)
+BuildVisLeafs:
+ (2.85 seconds)
+visibility matrix   :   7.8 megs
+MakeScales:
+ (3.26 seconds)
+Transfer Lists :    16986968 :   16.99M transfers
+       Indices :     9581852 :    9.14M bytes
+          Data :    34032175 :   32.46M bytes
+Bounce 1 GatherLight:
+ (0.12 seconds)
+Bounce 2 GatherLight:
+ (0.17 seconds)
+Bounce 3 GatherLight:
+ (0.17 seconds)
+Bounce 4 GatherLight:
+ (0.17 seconds)
+Bounce 5 GatherLight:
+ (0.17 seconds)
+Bounce 6 GatherLight:
+ (0.18 seconds)
+Bounce 7 GatherLight:
+ (0.17 seconds)
+Bounce 8 GatherLight:
+ (0.17 seconds)
+FinalLightFace:
+ (1.00 seconds)
+10.46 seconds elapsed
+
+-----   END   hlrad -----
+
+
+

@@ -1,0 +1,9 @@
+warning: Q105: items.qc:47:droptofloor: Too few parameters. See definition defs.qc(607)
+warning: Q116: weapons.qc:93:Local org redeclared
+warning: Q206: client.qc:134:FindIntermission: not all control paths return a value
+warning: Q105: monsters.qc:75:droptofloor: Too few parameters. See definition defs.qc(607)
+warning: Q205: misc.qc:179:No operation performed
+warning: Q105: misc.qc:249:droptofloor: Too few parameters. See definition defs.qc(607)
+warning: Q105: misc.qc:281:droptofloor: Too few parameters. See definition defs.qc(607)
+warning: Q105: misc.qc:536:makestatic: Too few parameters. See definition defs.qc(655)
+warning: Q208: LINK:0:System defs do match internal crcs.

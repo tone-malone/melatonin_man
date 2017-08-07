@@ -1,0 +1,144 @@
+hlcsg v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlcsg -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlcsg.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\cliff" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\cliff" -low -wadautodetect 
+Entering C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\cliff.map
+
+Current hlcsg Settings
+Name                 |  Setting  |  Default
+---------------------|-----------|-------------------------
+threads               [       4 ] [  Varies ]
+verbose               [     off ] [     off ]
+log                   [      on ] [      on ]
+reset logfile         [      on ] [      on ]
+developer             [       0 ] [       0 ]
+chart                 [     off ] [     off ]
+estimate              [     off ] [     off ]
+max texture memory    [ 33554432 ] [ 33554432 ]
+max lighting memory   [ 33554432 ] [ 33554432 ]
+priority              [     Low ] [  Normal ]
+
+noclip                [     off ] [     off ]
+null texture stripping[      on ] [      on ]
+clipnode economy mode [     off ] [     off ]
+clip hull type        [  simple ] [  simple ]
+onlyents              [     off ] [     off ]
+wadtextures           [      on ] [      on ]
+skyclip               [      on ] [      on ]
+hullfile              [    None ] [    None ]
+wadcfg by file        [    None ] [    None ]
+wadcfg by name        [    None ] [    None ]
+nullfile              [    None ] [    None ]
+nullify trigger       [      on ] [      on ]
+min surface area      [   0.000 ] [   0.000 ]
+brush union threshold [   0.000 ] [   0.000 ]
+map scaling           [    None ] [    None ]
+light name optimize   [      on ] [      on ]
+UTF8 game_text        [      on ] [      on ]
+
+Using mapfile wad configuration
+Wadfiles not in use by the map will be excluded
+Wadinclude list :
+[zhlt.wad]
+
+CreateBrush:
+ (0.00 seconds)
+CSGBrush:
+ (0.00 seconds)
+
+Including Wadfile: \users\tom\desktop\quake mod stuff\zips\valve_hammer_editor_353_10032015__2\valve hammer editor\zhlt.wad
+ - Contains 2 used textures, 66.67 percent of map (18 textures in wad)
+Using Wadfile: \users\tom\desktop\quake mod stuff\darkplaces\id1\textures.wad
+ - Warning: Larger than expected texture (490412 bytes): 'BUILDING2'
+ - Warning: Larger than expected texture (1393452 bytes): 'BUILDING1'
+ - Warning: Larger than expected texture (1393452 bytes): 'FLOOR2'
+ - Contains 1 used texture, 33.33 percent of map (54 textures in wad)
+
+Wad files required to run the map: "textures.wad;"
+
+Texture usage is at 0.08 mb (of 32.00 mb MAX)
+0.09 seconds elapsed
+
+-----   END   hlcsg -----
+
+
+
+hlbsp v3.4 VL30 (Nov 23 2012)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlbsp -----
+Command line: C:\Users\Tom\Desktop\QUAKEM~1\zips\VALVE_~1\VALVEH~1\VTLS\hlbsp.exe "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\cliff" 
+Arguments: "C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\cliff" -low -chart 
+
+Current hlbsp Settings
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       4 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [      on ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 33554432 ] [ 33554432 ]
+priority            [     Low ] [  Normal ]
+
+noclip              [     off ] [     off ]
+nofill              [     off ] [     off ]
+noinsidefill        [     off ] [     off ]
+noopt               [     off ] [     off ]
+no clipnode merging [     off ] [     off ]
+null tex. stripping [      on ] [      on ]
+notjunc             [     off ] [     off ]
+nobrink             [     off ] [     off ]
+subdivide size      [     240 ] [     240 ] (Min 64) (Max 512)
+max node size       [    1024 ] [    1024 ] (Min 64) (Max 65536)
+remove hull 2       [     off ] [     off ]
+
+
+SolidBSP [hull 0] 19 (0.00 seconds)
+BSP generation successful, writing portal file 'C:\Users\Tom\Desktop\QUAKE MOD STUFF\DARKPLACES\ID1\maps\cliff.prt'
+SolidBSP [hull 1] 18 (0.00 seconds)
+SolidBSP [hull 2] 18 (0.00 seconds)
+SolidBSP [hull 3] 18 (0.00 seconds)
+Reduced 33 clipnodes to 33
+Reduced 6 texinfos to 6
+Reduced 2 texdatas to 2 (1204 bytes to 1204)
+Reduced 126 planes to 43
+FixBrinks:
+Increased 33 clipnodes to 33.
+
+Object names  Objects/Maxobjs  Memory / Maxmem  Fullness
+------------  ---------------  ---------------  --------
+models              1/512           64/32768    ( 0.2%)
+planes             43/32768        860/655360   ( 0.1%)
+vertexes           92/65535       1104/786420   ( 0.1%)
+nodes              18/32767        432/786408   ( 0.1%)
+texinfos            6/32767        240/1310680  ( 0.0%)
+faces              76/65535       1520/1310700  ( 0.1%)
+* worldfaces       76/32768          0/0        ( 0.2%)
+clipnodes          33/32767        264/262136   ( 0.1%)
+leaves             13/32760        364/917280   ( 0.0%)
+* visleafs         12/8192           0/0        ( 0.1%)
+marksurfaces      100/65535        200/131070   ( 0.2%)
+surfedges         336/512000      1344/2048000  ( 0.1%)
+edges             169/256000       676/1024000  ( 0.1%)
+texdata          [variable]       1204/33554432  ( 0.0%)
+lightdata        [variable]          0/33554432  ( 0.0%)
+visdata          [variable]          0/8388608  ( 0.0%)
+entdata          [variable]       1660/2097152  ( 0.1%)
+* AllocBlock        1/64             0/0        ( 1.6%)
+2 textures referenced
+=== Total BSP file data space used: 9932 bytes ===
+Wad files required to run the map: "textures.wad;"
+0.03 seconds elapsed
+
+-----   END   hlbsp -----
+
+
+

@@ -1,0 +1,12 @@
+cd
+cd on
+cd play track002
+impulse 9
+map e1m2
+map e1m2
+map e1m2
+map e1m2
+map e1m2
+map e1m2
+map e1m2
+map e1m2
